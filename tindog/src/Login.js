@@ -1,10 +1,10 @@
 import React from "react";
 
 const handleClick = () => {
-    console.log("Click on login button")
+    console.log("Click on perfil button")
 };
 
-const Login = () => (
+const Perfil = () => (
     <svg
       width="30"
       height="30"
@@ -40,4 +40,4 @@ const Login = () => (
   </svg>
 );
 
-export default Login;
+export default Perfil;

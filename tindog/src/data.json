@@ -1,5 +1,51 @@
 [
     {
-        "id": 1
+        "id": 1,
+        "name": "Boris",
+        "race": "Pug",
+        "age": 2,
+        "photo": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 2,
+        "name": "Mag",
+        "race": "Yorkshire Terrier",
+        "age": 1,
+        "photo": "https://via.placeholder.com/150" 
+    },
+    {
+        "id": 3,
+        "name": "Chloe Farias",
+        "race": "Bulldog Francês",
+        "age": 3,
+        "photo": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 4,
+        "name": "Totó",
+        "race": "Poodle Toy",
+        "age": 11,
+        "photo": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 5,
+        "name": "Pingo",
+        "race": "Pinscher",
+        "age": 13,
+        "photo": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 6,
+        "name": "Hulk",
+        "race": "Pinscher",
+        "age": 1,
+        "photo": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 7,
+        "name": "Meg",
+        "race": "Labrador",
+        "age": 7,
+        "photo": "https://via.placeholder.com/150"
     }
 ]
