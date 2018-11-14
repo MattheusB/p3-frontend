@@ -4,7 +4,7 @@ export default class DogRace extends Component{
     render(){
         return(
             <div>
-                {this.props.dogRace}
+                {this.props.race}
             </div>
         );
     }

@@ -7,12 +7,12 @@ import LikeButton from "./LikeButton";
 export default class DogCard extends Component{
     render(){
         return(
-            <div>
+            <div className="DogGallery">
                 {this.props.Dogs.map(dog => {
                     return(
-                        <article key={dog.id}>
+                        <article key={dog.id} className="DogCard">
                          <>
-                            <img src={dog.photo}/>
+                            <img className="DogImage" src={dog.photo}/>
                             <DogName name={dog.name} />
                             <DogAge age={dog.age} />
                             <DogRace race={dog.race} />

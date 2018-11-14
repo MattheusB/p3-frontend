@@ -6,18 +6,12 @@ const handleClick = () =>{
 }
 
 const LikeButton = () =>(
-    <div>
-    <Button 
-      fluid 
-      color='blue' 
-      animated='vertical'
-      onClick={handleClick}>
-      <Button.Content hidden>Adicionar ao carrinho</Button.Content>
-      <Button.Content visible>
-        <Icon name='shop' />
-      </Button.Content>
-    </Button>
-  </div>
+<div class="ui labeled icon" tabindex="0">
+  <div class="ui red button">
+    <i class="heart icon"></i> Like
+  </div>  
+</div>
+
 )
 
 export default LikeButton;

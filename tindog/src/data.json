@@ -4,48 +4,48 @@
         "name": "Boris",
         "race": "Pug",
         "age": 2,
-        "photo": "https://via.placeholder.com/150"
+        "photo": "https://www.petlove.com.br/images/breeds/192469/profile/original/pug-p.jpg?1532539387"
     },
     {
         "id": 2,
         "name": "Mag",
         "race": "Yorkshire Terrier",
         "age": 1,
-        "photo": "https://via.placeholder.com/150" 
+        "photo": "http://tudosobrecachorros.com.br/wp-content/uploads/yorkshire.png" 
     },
     {
         "id": 3,
         "name": "Chloe Farias",
         "race": "Bulldog Francês",
         "age": 3,
-        "photo": "https://via.placeholder.com/150"
+        "photo": "http://www.bulldogfrances.pt/wp-content/uploads/2017/01/Bulldog-Frances-Pirata-e1483705579533-226x252.png"
     },
     {
         "id": 4,
-        "name": "Totó",
-        "race": "Poodle Toy",
-        "age": 11,
-        "photo": "https://via.placeholder.com/150"
+        "name": "Pal",
+        "race": "Pastor Alemão",
+        "age": 8,
+        "photo": "https://www.petlove.com.br/images/breeds/193103/profile/original/pastor_alemao-p.jpg?1532539270"
     },
     {
         "id": 5,
         "name": "Pingo",
         "race": "Pinscher",
         "age": 13,
-        "photo": "https://via.placeholder.com/150"
+        "photo": "http://www.melhoramigo.dog/wp-content/uploads/2016/03/pinscher-miniatura-marrom.jpg"
     },
     {
         "id": 6,
         "name": "Hulk",
         "race": "Pinscher",
         "age": 1,
-        "photo": "https://via.placeholder.com/150"
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Miniature_Pinscher.jpg"
     },
     {
         "id": 7,
         "name": "Meg",
         "race": "Labrador",
         "age": 7,
-        "photo": "https://via.placeholder.com/150"
+        "photo": "https://www.clubeparacachorros.com.br/wp-content/uploads/2014/07/labrador-preto-sentado.jpg"
     }
 ]

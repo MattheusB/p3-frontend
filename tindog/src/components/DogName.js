@@ -4,7 +4,7 @@ export default class DogName extends Component{
     render(){
         return(
             <div>
-                <h3>{this.props.dogName}</h3>
+                <h3>{this.props.name}</h3>
             </div>
         );
     }

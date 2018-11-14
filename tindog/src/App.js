@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import './App.css';
 import Perfil from "./Perfil";
 import Chat from "./Chat";
 import Dogs from "./data.json";
