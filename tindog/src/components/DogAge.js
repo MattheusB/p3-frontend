@@ -4,7 +4,7 @@ export default class DogAge extends Component{
     render(){
         return(
             <div>
-                {this.props.age}
+                <b>Idade: </b>{this.props.age} ano(s)
             </div>
         );
     }

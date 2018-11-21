@@ -1,22 +1,45 @@
 import React, { Component, Fragment } from 'react';
-import Perfil from "./Perfil";
-import Chat from "./Chat";
 import Dogs from "./data.json";
 import DogGallery from "./components/DogGallery";
 
 class App extends Component {
 
+  perfilClick = () => {
+    console.log("Click on perfil button")
+};
+
+chatClick = () =>{
+  console.log("Click on chat button")
+};
+
+logoutClick = () =>{
+  console.log("Click on logout button")
+}
+
+homeClick = () =>{
+  console.log("Click on home button")
+}
+
   render() {
     return (
       <Fragment>
-      <div className="c-muted-2 order-1-s order-2-ns ml-auto ml0-m mv3-s mv0-ns">
-      <div className="mh5 dib pointer">
-        <Perfil />
-      </div>
-      <div className="mh5 dib pointer">
-        <Chat />
-      </div>
-    </div>
+<div class="ui secondary pointing menu">
+  <a class="item active" onClick={this.homeClick}>
+    Home
+  </a>
+  <a class="item" onClick={this.chatClick}>
+    Chat
+  </a>
+  <a class="item" onClick={this.perfilClick}>
+    Perfil
+  </a>
+  <div class="right menu">
+    <a class="ui item" onClick={this.logoutClick}>
+      Logout
+    </a>
+  </div>
+  
+</div>
     <DogGallery Dogs={Dogs}/>
     </Fragment>
     );

@@ -12,9 +12,9 @@ export default class DogCard extends Component{
                     return(
                         <article key={dog.id} className="DogCard">
                          <>
-                            <img className="DogImage" src={dog.photo}/>
+                            <img className="DogImage" src={dog.photo}/>                            
                             <DogName name={dog.name} />
-                            <DogAge age={dog.age} />
+                            <DogAge  age={dog.age} />
                             <DogRace race={dog.race} />
                             <LikeButton></LikeButton>
                          </>   
