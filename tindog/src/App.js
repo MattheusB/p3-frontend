@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Dogs from "./data.json";
-import DogGallery from "./components/DogGallery";
+import DogGallery from "./components/DogCard/DogGallery";
+import Footer from "./components/Footer"
 
 class App extends Component {
 
@@ -41,6 +42,9 @@ homeClick = () =>{
   
 </div>
     <DogGallery Dogs={Dogs}/>
+    <Element name ='footer'>
+          <Footer/>
+        </Element>
     </Fragment>
     );
   }

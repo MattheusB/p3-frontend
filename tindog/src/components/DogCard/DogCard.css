@@ -1,0 +1,19 @@
+
+  .DogGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    padding: 10px;
+    
+  }
+
+  .DogCard {
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+
+  }
+  .DogImage {
+      height: 60%;
+      width: 60%;
+  }

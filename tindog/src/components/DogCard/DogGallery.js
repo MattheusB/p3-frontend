@@ -16,7 +16,7 @@ export default class DogCard extends Component{
                             <DogName name={dog.name} />
                             <DogAge  age={dog.age} />
                             <DogRace race={dog.race} />
-                            <LikeButton></LikeButton>
+                            <LikeButton ></LikeButton>
                          </>   
                         </article>
                     );
