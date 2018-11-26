@@ -11,7 +11,7 @@ class App extends Component {
       <Fragment>
         <NavBar></NavBar>
 
-    <DogGallery Dogs={Dogs}/>
+    <DogGallery/>
     </Fragment>
     );
   }

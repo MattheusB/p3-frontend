@@ -13,7 +13,7 @@ export default class DogCard extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:3000/game')
+        axios.get('http://localhost:3000/user')
         .then(res=>{
             const dogCards = res.data
             this.setState({dogCards});
@@ -23,7 +23,7 @@ export default class DogCard extends Component{
     render(){
         return(
             <div className="DogGallery">
-                {this.props.Dogs.map(dog => {
+                {this.state.dogCards.map(dog => {
                     return(
                         <article key={dog.id} className="DogCard">
                          <>
