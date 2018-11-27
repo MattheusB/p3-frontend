@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import Dogs from "./data.json";
 import DogGallery from "./components/DogCard/DogGallery";
 import NavBar from "./components/NavBar/navBar"
+import Register from "./components/Register/Register"
 
 class App extends Component {
 
@@ -9,9 +9,10 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <NavBar></NavBar>
+        <NavBar/>
 
     <DogGallery/>
+  <Register/>
     </Fragment>
     );
   }
