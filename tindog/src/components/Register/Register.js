@@ -9,7 +9,10 @@ class Register extends Component{
     <Modal trigger={<Button circular size="mini" negative icon>
       <Icon name='add' />
     </Button>}>
-        <Form/>
+        <Modal.Content>
+          <h1>Digite as informações da sua conta</h1>
+          <Form></Form>
+        </Modal.Content>
     </Modal>
     );
   }
