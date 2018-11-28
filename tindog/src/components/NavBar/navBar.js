@@ -1,4 +1,6 @@
 import React, {Component} from "react"
+import Register from "../Register/Register";
+import { Form } from "../../../node_modules/semantic-ui-react";
 
 class NavBar extends Component {
     perfilClick = () => {
@@ -16,6 +18,9 @@ class NavBar extends Component {
     homeClick = () =>{
       console.log("Click on home button")
     }
+    addClick = () =>{
+     return <Form/>;
+    }
     render() {  
         return (
 
@@ -30,6 +35,9 @@ class NavBar extends Component {
     Perfil
   </a>
   <div class="right menu">
+  <a>
+      <Register/>
+    </a>
     <a class="ui item" onClick={this.logoutClick}>
       Logout
     </a>
