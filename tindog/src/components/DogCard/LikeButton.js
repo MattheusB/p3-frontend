@@ -6,7 +6,7 @@ const handleClick = () =>{
 }
 
 const LikeButton = () =>(
-<div class="ui labeled icon" tabindex="0">
+<div class="ui labeled icon" tabIndex="0">
   <div class="ui red button">
     <i class="heart icon"></i> Like
   </div>  

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Button, Form } from 'semantic-ui-react'
-import axios from "axios"
 
 class DogForm extends Component {
   state = {
@@ -48,15 +47,13 @@ class DogForm extends Component {
       role: this.state.role
     };
 
-    console.log(user);
-
-    axios.post("http://localhost:3000/user/", { user })
-      window.location.reload();
+     this.props.dogCreate({user});
+     this.props.closeModal();
       
   }
   render() {
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form onSubmit={this.handleSubmit} >
         <Form.Field>
           <label>Nome</label>
           <input placeholder="Nome" name="name" onChange={this.nameChange} />
@@ -85,8 +82,7 @@ class DogForm extends Component {
           <label>Role</label>
           <input placeholder="Função" name="role" onChange={this.roleChange} />
         </Form.Field>
-
-        <Button positive type="submit">Adicionar</Button>
+        <Button positive type="submit" >Adicionar</Button>
       </Form>
     );
   }

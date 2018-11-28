@@ -18,9 +18,6 @@ class NavBar extends Component {
     homeClick = () =>{
       console.log("Click on home button")
     }
-    addClick = () =>{
-     return <Form/>;
-    }
     render() {  
         return (
 
@@ -36,7 +33,7 @@ class NavBar extends Component {
   </a>
   <div class="right menu">
   <a>
-      <Register/>
+      <Register dogCreate = {this.props.dogCreate}/>
     </a>
     <a class="ui item" onClick={this.logoutClick}>
       Logout

@@ -3,27 +3,16 @@ import DogName from "./DogName";
 import DogAge from "./DogAge";
 import DogRace from "./DogRace";
 import LikeButton from "./LikeButton";
-import axios from "axios";
+
 
 
 export default class DogCard extends Component{
 
-    state = {
-        dogCards: []
-    }
-
-    componentDidMount(){
-        axios.get('http://localhost:3000/user')
-        .then(res=>{
-            const dogCards = res.data
-            this.setState({dogCards});
-        })
-    }
 
     render(){
         return(
             <div className="DogGallery">
-                {this.state.dogCards.map(dog => {
+                {this.props.dogCards.map(dog => {
                     return(
                         <article key={dog.id} className="DogCard">
                          <>
