@@ -51,10 +51,7 @@ class DogForm extends Component {
     console.log(user);
 
     axios.post("http://localhost:3000/user/", { user })
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
-      })
+      window.location.reload();
       
   }
   render() {
