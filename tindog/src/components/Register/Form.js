@@ -80,7 +80,7 @@ class DogForm extends Component {
         </Form.Field>
         <Form.Field>
           <label>Role</label>
-          <input placeholder="Função" name="role" onChange={this.roleChange} />
+          <input placeholder="Função (default ou admin)" name="role" onChange={this.roleChange} />
         </Form.Field>
         <Button positive type="submit" >Adicionar</Button>
       </Form>
