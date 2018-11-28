@@ -1,28 +1,92 @@
 import React, {Component} from 'react'
 import { Button,Form } from 'semantic-ui-react'
+import axios from "axios"
 
 class DogForm extends Component{
+    state = {
+        name: "",
+        age: "",
+        race: "",
+        photo: "",
+        email: "",
+        password: "",
+        role:""
+    }
+    nameChange = event => {
+        this.setState({ name: event.target.value });
+      }
+      ageChange = event => {
+        this.setState({ age: event.target.value });
+      }
+      raceChange = event => {
+        this.setState({ race: event.target.value });
+      }
+      photoChange = event =>{
+        this.setState({photo: event.target.value});
+      }
+      passwordChange = event =>{
+        this.setState({photo: event.target.value});
+      }
+      emailChange = event =>{
+        this.setState({photo: event.target.value});
+      }
+      roleChange = event =>{
+        this.setState({photo: event.target.value});
+      }
+
+
+      handleSubmit = event => {
+        event.preventDefault();
+    
+        const user = {
+          name: this.state.name,
+          age: this.state.age,
+          race: this.state.race,
+          photo: this.state.photo,
+          password: this.state.password,
+          email: this.state.email,
+          role: this.state.role
+        };
+    
+        axios.post("http://localhost:3000/user/", { user })
+          .then(res => {
+            console.log(res);
+            console.log(res.data);
+          })
+      }
     render(){
         return(
-  <Form>
+  <Form onSubmit={this.handleSubmit}>
     <Form.Field>
       <label>Nome</label>
-      <input placeholder='Nome' />
+      <input placeholder="Nome" name="name" onChange={this.nameChange}/>
     </Form.Field>
     <Form.Field>
       <label>Idade</label>
-      <input placeholder='Idade' />
+      <input placeholder="Idade" name="age" onChange={this.ageChange}/>
     </Form.Field>
     <Form.Field>
       <label>Raça</label>
-      <input placeholder='Raça' />
+      <input placeholder="Raça" name="race" onChange={this.raceChange} />
     </Form.Field>
     <Form.Field>
       <label>Foto</label>
-      <input placeholder='URL da foto' />
+      <input placeholder="URL da foto" name="photo" onChange={this.photoChange}/>
+    </Form.Field>
+    <Form.Field>
+      <label>Senha</label>
+      <input placeholder="Senha" name="password" onChange={this.passwordChange}/>
+    </Form.Field>
+    <Form.Field>
+      <label>Email</label>
+      <input placeholder="Email" name="email" onChange={this.emailChange}/>
+    </Form.Field>
+    <Form.Field>
+      <label>Role</label>
+      <input placeholder="Função" name="role" onChange={this.photoChange}/>
     </Form.Field>
 
-    <Button positive type='submit'>Adicionar</Button>
+    <Button positive type="submit">Adicionar</Button>
   </Form>
 );
 }

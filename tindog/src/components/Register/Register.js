@@ -6,7 +6,7 @@ import './Register.css';
 class Register extends Component{
   render(){
     return(
-    <Modal trigger={<Button className='addbtn' circular size="mini" negative icon>
+    <Modal trigger={<Button circular size="mini" negative icon>
       <Icon name='add' />
     </Button>}>
         <Form/>
