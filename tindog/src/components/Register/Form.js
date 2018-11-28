@@ -13,25 +13,38 @@ class DogForm extends Component{
         role:""
     }
     nameChange = event => {
+      console.log(typeof event.target.value)
         this.setState({ name: event.target.value });
       }
       ageChange = event => {
+        console.log(typeof event.target.value)
+
         this.setState({ age: event.target.value });
       }
       raceChange = event => {
+        console.log(typeof event.target.value)
+
         this.setState({ race: event.target.value });
       }
       photoChange = event =>{
+        console.log(typeof event.target.value)
+
         this.setState({photo: event.target.value});
       }
       passwordChange = event =>{
-        this.setState({photo: event.target.value});
+        console.log(typeof event.target.value)
+
+        this.setState({password: event.target.value});
       }
       emailChange = event =>{
-        this.setState({photo: event.target.value});
+        console.log(typeof event.target.value)
+
+        this.setState({email: event.target.value});
       }
       roleChange = event =>{
-        this.setState({photo: event.target.value});
+        console.log(typeof event.target.value)
+
+        this.setState({role: event.target.value});
       }
 
 
