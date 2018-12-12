@@ -9,7 +9,8 @@ class DogForm extends Component {
     photo: "",
     email: "",
     password: "",
-    role: ""
+    role: "",
+    description: ""
   }
   nameChange = event => {
     this.setState({ name: event.target.value });
@@ -32,6 +33,12 @@ class DogForm extends Component {
   roleChange = event => {
     this.setState({ role: event.target.value });
   }
+  descriptionChange = event =>{
+    this.setState({information: event.target.value});
+  }
+  addressChange = event =>{
+    this.state({address: event.target.value});
+  }
 
 
   handleSubmit = event => {
@@ -44,7 +51,9 @@ class DogForm extends Component {
       photo: this.state.photo,
       password: this.state.password,
       email: this.state.email,
-      role: this.state.role
+      role: this.state.role,
+      description: this.state.description,
+      address: this.state.address
     };
 
      this.props.dogCreate({user});
@@ -77,6 +86,14 @@ class DogForm extends Component {
         <Form.Field>
           <label>Email</label>
           <input placeholder="Email" name="email" onChange={this.emailChange} />
+        </Form.Field>
+        <Form.Field>
+          <label>Description</label>
+          <input placeholder="Descrição do seu doguinho" name="description" onChange={this.descriptionChange} />
+        </Form.Field>
+        <Form.Field>
+          <label>Address</label>
+          <input placeholder="Endereço" name="address" onChange={this.addressChange} />
         </Form.Field>
         <Form.Field>
           <label>Role</label>
