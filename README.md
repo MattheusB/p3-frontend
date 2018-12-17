@@ -40,7 +40,7 @@ cd p3-frontend/tindog
 npm install
 ```
 
-- Execute o [backend](https://github.com/MattheusB/p3-frontend) do projeto.
+- Execute o [backend](https://github.com/MattheusB/p3-backend) do projeto.
 
 - Execute o frontend do projeto:
 ```shell
