@@ -26,15 +26,23 @@ Qualquer pessoa que tenha um cachorro como bicho de estimação e queira que o m
 
 # Instalação
 - Faça o clone do repositório:
+```shell
 git clone https://github.com/MattheusB/p3-frontend
+```
 
 - Navegue para dentro da pasta:
+```shell
 cd p3-frontend/tindog
+```
 
 - Instale as dependências:
+```shell
 npm install
+```
 
 - Execute o [backend](https://github.com/MattheusB/p3-frontend) do projeto.
 
 - Execute o frontend do projeto:
+```shell
 npm start
+```
