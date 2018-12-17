@@ -23,3 +23,18 @@ Proprietários de cães cadastram seu cachorro fornecendo informações sobre o 
 
 # Quem pode usar?
 Qualquer pessoa que tenha um cachorro como bicho de estimação e queira que o mesmo procrie.
+
+# Instalação
+- Faça o clone do repositório:
+git clone https://github.com/MattheusB/p3-frontend
+
+- Navegue para dentro da pasta:
+cd p3-frontend/tindog
+
+- Instale as dependências:
+npm install
+
+- Execute o [backend](https://github.com/MattheusB/p3-frontend) do projeto.
+
+- Execute o frontend do projeto:
+npm start
